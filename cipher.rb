@@ -1,9 +1,9 @@
-ALPHA = "abcdefghijklmnopfqrsttuvwxyz"
+ALPHA = "abcdefghijklmnopfqrstuvwxyz"
 ALPHA_C = ALPHA.upcase
 
 def caesar_cipher(to_cipher, shift)
   ciphered = String.new
-  
+
   to_cipher.each_char do |i|
     if ALPHA.index(i)
       ciphered << ALPHA[ALPHA.index(i) - shift]
@@ -14,5 +14,5 @@ def caesar_cipher(to_cipher, shift)
     end
   end
 
-return ciphered
+  ciphered
 end
