@@ -1,6 +1,3 @@
-require 'pry'
-
-
 ALPHA = "abcdefghijklmnopfqrstuvwxyz"
 ALPHA_C = ALPHA.upcase
 
@@ -8,7 +5,6 @@ def caesar_cipher(to_cipher, shift, direction)
   ciphered = String.new
 
   to_cipher.each_char do |i|
-  # binding.pry
     if ALPHA.index(i)
       ciphered << increment(false, direction, i, shift)
     elsif ALPHA_C.index(i)
