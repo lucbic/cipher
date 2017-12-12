@@ -1,0 +1,15 @@
+<form method="post" action="/">
+  <div class="form-group">
+    <label for="to_cipher">Text</label>
+    <textarea name="to_cipher" class="form-control"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Cipher</button>
+</form>
+<br>
+
+<% if @ciphered %>
+  <label for="result">Result</label>
+  <div class="alert alert-success">
+    <%= @ciphered %>
+  </div>
+<% end %>
