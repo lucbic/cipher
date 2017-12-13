@@ -1,8 +1,9 @@
 require_relative 'cipher'
 require 'sinatra'
-require "better_errors"
+
 
 if development?
+  require "better_errors"
   require 'pry'
   require 'sinatra/reloader'
   use BetterErrors::Middleware
